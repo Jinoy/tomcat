@@ -1,4 +1,4 @@
-webserver1 ansible_ssh_host=192.168.33.10
+webserver1 ansible_ssh_host=192.168.33.20
 webserver2 ansible_ssh_host=192.168.33.30
 
 [tomcat-servers]
