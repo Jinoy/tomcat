@@ -1,0 +1,10 @@
+webserver1 ansible_ssh_host=192.168.33.10
+webserver2 ansible_ssh_host=192.168.33.30
+
+[tomcat-servers]
+webserver1
+webserver2
+
+[tomcat-servers:vars]
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant
