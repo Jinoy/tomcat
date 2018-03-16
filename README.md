@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Standalone Tomcat Deployment
 
 - Requires Ansible 1.2 or newer
@@ -27,3 +28,7 @@ Here are some ideas for ways that these playbooks could be extended:
 
 We would love to see contributions and improvements, so please fork this
 repository on GitHub and send us your changes via pull requests.
+=======
+# tomcat
+Ansible + Tomcat
+>>>>>>> 58d545027c82cc8e0ba1dc7be20a0440c4aedccb
