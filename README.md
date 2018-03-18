@@ -1,10 +1,7 @@
 
-These playbooks deploy Tomcat Application Server,version 7. 
+These playbooks deploy Tomcat Application Server,version 7, Nginx HTTP server, and SonarQube v6.4. 
 
 
 When the playbook run completes, you should be able to see the Tomcat
-Application Server running on the ports you chose, on the target machines.
-
-This is a very simple playbook and could serve as a starting point for more
-complex Tomcat-based projects. 
+Application Server running on the target machines.
 
