@@ -1,2 +1,20 @@
 ---
-- name:
+- name: Install unzip
+  yum: name=unzip state=present
+
+- name: Install sonarqube
+  geturl: url=https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-6.4.zipdest=/opt/sonarqube-6.4.zip
+
+- name: Extract sonarqube
+  command: chdir=/usr/share /bin/unzip unzip /opt/sonarqube-6.4.zip -C /opt/ creates=/opt/sonarqube-6.4
+
+- name: Symlink Install directory
+  file: src=/opt/sonarqube-6.4 path=/usr/share/sonarqube state=link
+
+- name: Configure sonarqube
+  template: src=sonar.properties dest=/usr/share/sonarqube/conf/
+  notify: restart sonarqube
+
+- name: Start sonarqube
+  service: name=sonarqube state=started enabled=yes
+

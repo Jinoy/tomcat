@@ -1,10 +1,14 @@
+#change the IP addr of your target machines below.
+
 webserver1 ansible_ssh_host=192.168.33.20
 webserver2 ansible_ssh_host=192.168.33.30
 
+#Server Group
 [tomcat-servers]
 webserver1
 webserver2
 
+#Server Group Auth VARS
 [tomcat-servers:vars]
-ansible_ssh_user=vagrant
-ansible_ssh_pass=vagrant
+ansible_ssh_user=vagrant     #add your username here '=....'
+ansible_ssh_pass=vagrant     #add your password here '=....'

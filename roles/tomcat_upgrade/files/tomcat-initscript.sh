@@ -3,9 +3,7 @@
 # chkconfig: 345 99 28
 # description: Starts/Stops Apache Tomcat
 #
-# Tomcat 7 start/stop/status script
-# Forked from: https://gist.github.com/valotas/1000094
-# @author: Miglen Evlogiev <bash@miglen.com>
+# Tomcat 8 start/stop/status script
 #
 # Release updates:
 # Updated method for gathering pid of the current proccess
