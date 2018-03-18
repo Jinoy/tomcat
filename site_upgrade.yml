@@ -1,0 +1,9 @@
+---
+# This playbook updates and deploys a Tomcat 8 server.
+
+- hosts: tomcat-servers
+  become: True
+  become_method: sudo
+
+  roles:
+    - tomcat_upgrade
