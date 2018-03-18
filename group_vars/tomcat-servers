@@ -9,8 +9,7 @@ admin_username: admin
 admin_password: adminsecret
 
 #This is used for the nginx server configuration, but access to the
-# WordPress site is not restricted by a named host.
 nginx_port: 80
-server_hostname: super.servers.com
 nginx_port_https: 443
+server_hostname: localhost
 

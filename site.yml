@@ -8,3 +8,4 @@
   roles:
     - nginx
     - tomcat
+#   - sonarqube
